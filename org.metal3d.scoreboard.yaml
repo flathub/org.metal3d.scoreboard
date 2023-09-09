@@ -29,4 +29,4 @@ modules:
     sources:
       - type: archive
         url: "https://github.com/metal3d/scoreboard/archive/refs/tags/v1.1.0.tar.gz"
-        sha256: "be85af6a5ed0a69791434bc3c106dddb5129a1096b29619245dddf53f76f5e86"
+        sha256: "17c7a6fc25cc91d62faf59c3685c6a32a64cf4795d454fab909f33d28320b4ef"
