@@ -21,12 +21,15 @@ modules:
   - name: scoreboard
     buildsystem: simple
     build-commands:
-      - $GOROOT/bin/go build -trimpath -o scoreboard -ldflags "-X scoreboard/version.appVersion=1.1.0-flathub" .
+      - $GOROOT/bin/go build -trimpath -o scoreboard -ldflags "-X scoreboard/version.appVersion=1.1.0-2-flathub" .
       - install -Dm00755 scoreboard $FLATPAK_DEST/bin/scoreboard
       - install -Dm00644 Icon.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
       - install -Dm00644 $FLATPAK_ID.appdata.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.appdata.xml
     sources:
-      - type: archive
-        url: "https://github.com/metal3d/scoreboard/archive/refs/tags/v1.1.0.tar.gz"
-        sha256: "17c7a6fc25cc91d62faf59c3685c6a32a64cf4795d454fab909f33d28320b4ef"
+      - type: file
+        path: org.metal3d.scoreboard.appdata.xml
+      - type: file
+        path: org.metal3d.scoreboard.desktop
+      - type: dir
+        path: ./scoreboard
