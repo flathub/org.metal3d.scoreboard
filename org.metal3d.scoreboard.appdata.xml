@@ -3,15 +3,12 @@
   <id>org.metal3d.scoreboard</id>
   
   <name>Scoreboard</name>
-  <developer_name>Patrice Ferlet</developer_name>
-  
+  <developer id="org.metal3d">
+    <name>Patrice Ferlet</name>
+  </developer>
   <summary>A simple scoreboard to count points for any game</summary>
   <summary xml:lang="fr">Un simple compteur de points pour n'importe quel jeu</summary>
   
-  <categories>
-    <category>Game</category>
-    <category>Utility</category>
-  </categories>
   
   <languages>
     <lang>en</lang>
@@ -43,7 +40,7 @@
   
   <launchable type="desktop-id">org.metal3d.scoreboard.desktop</launchable>
   <screenshots>
-    <screenshot>
+    <screenshot type="default">
         <image>https://github.com/metal3d/scoreboard/blob/main/captures/0-index.png?raw=true</image>
     </screenshot>
     <screenshot>
@@ -59,6 +56,7 @@
 
   <url type="bugtracker">https://github.com/metal3d/scoreboard/issues</url>
   <url type="homepage">https://github.com/metal3d/scoreboard</url>
+  <url type="vcs-browser">https://github.com/metal3d/scoreboard</url>
 
   <!-- Generate the oars rating at: https://hughsie.github.io/oars/generate.html -->
   <content_rating type="oars-1.1" />
